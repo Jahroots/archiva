@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y unzip
 RUN opkg-install unzip
 RUN curl -O http://mirrors.ircam.fr/pub/apache/archiva/2.1.1/binaries/apache-archiva-2.1.1-bin.zip
 RUN unzip apache-archiva-2.1.1-bin.zip
+RUN rm apache-archiva-2.1.1-bin.zip
 
 ### Clean
 RUN apt-get -y autoclean
